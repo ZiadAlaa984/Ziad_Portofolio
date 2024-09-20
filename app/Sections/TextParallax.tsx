@@ -10,10 +10,10 @@ import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 
 interface SlideProps {
-  src: any;
+  src: string;
   direction: 'left' | 'right';
   left: string;
-  progress: any;
+  progress: number | any;
 }
 
 export default function TextParallax() {

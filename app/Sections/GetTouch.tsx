@@ -11,9 +11,9 @@ export default function GetTouch() {
       <div className="pt-16 xl:py-36 pb-36 flex justify-center items-center  flex-col gap-6">
         <h2 id="Contact" className=" xl:text-7xl text-4xl md:text-6xl  font-bold">Get in Touch.</h2>
         <p className="xl:text-2xl text-lg md:text-xl font-medium max-w-3xl text-center">
-          If you're interested in working together or have any questions, feel
-          free to reach out. I'm always open to new opportunities and
-          collaborations. Let's create something amazing together!
+          If you&apos;re interested in working together or have any questions, feel
+          free to reach out. I&apos;m always open to new opportunities and
+          collaborations. Let&apos;s create something amazing together!
         </p>
         <div className="flex justify-center mt-14 items-center">
           <FramerMagnetic>

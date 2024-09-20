@@ -6,7 +6,7 @@ import img2 from './images/rec.png';
 import img3 from './images/AI.png';
 import img4 from './images/oldPorto.png';
 import img0 from './images/fresh.png';
-import Link from "next/link";
+import { StaticImageData } from 'next/image';
 
 interface Project {
   src: string;
@@ -21,14 +21,16 @@ interface ModalProps {
   projects: Project[];
 }
 
-// Mapping of image filenames to imported images
-const imageMap: Record<string, any> = {
+// Mapping of image filenames to imported images with the correct type
+const imageMap: Record<string, StaticImageData> = {
   'fresh.png': img0,
   'movie1.png': img1,
   'rec.png': img2,
   'AI.png': img3,
   'oldPorto.png': img4,
 };
+
+// Rest of your component logic...
 
 const scaleAnimation = {
   initial: { scale: 0, x: "-50%", y: "-50%" },
@@ -121,7 +123,7 @@ export default function   Modal({ modal, projects }: ModalProps) {
 
 
       <motion.div
-        className="absolute hidden md:flex z-20 w-20 h-20 rounded-full bg-transparent text-white flex items-center justify-center pointer-events-none"
+        className="absolute hidden md:flex z-20 w-20 h-20 rounded-full bg-transparent text-white  items-center justify-center pointer-events-none"
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}

@@ -5,7 +5,7 @@ import img2 from './images/rec.png';
 import img3 from './images/AI.png';
 import img4 from './images/oldPorto.png';
 import img0 from './images/fresh.png';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
 interface ProjectProps {
@@ -18,7 +18,7 @@ interface ProjectProps {
 }
 
 // Mapping of image filenames to imported images
-const imageMap: Record<string, any> = {
+const imageMap: Record<string, StaticImageData> = {
   'fresh.png': img0,
   'movie1.png': img1,
   'rec.png': img2,
